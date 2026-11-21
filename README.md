@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Sistem Akademik — Project 5
+# 🚀 Sistem Akademik Project 5
 
 **Project 5 · PHP OOP + Composer (versi lengkap)**
 
@@ -17,14 +17,14 @@ Halaman disusun sebagai file mandiri (`mhsw.php`, `mhsw_input.php`, `mhsw_edit.p
 ## 📸 Tampilan
 
 <table>
-  <tr>
-    <td width="50%"><img src="docs/screenshots/01-dashboard.png" alt="Dashboard"><br><sub>Dashboard</sub></td>
-    <td width="50%"><img src="docs/screenshots/02-mahasiswa.png" alt="Daftar Mahasiswa"><br><sub>Daftar Mahasiswa</sub></td>
-  </tr>
-  <tr>
-    <td width="50%"><img src="docs/screenshots/03-form-input.png" alt="Form Input"><br><sub>Form Input</sub></td>
-    <td width="50%"><img src="docs/screenshots/04-dosen.png" alt="Daftar Dosen"><br><sub>Daftar Dosen</sub></td>
-  </tr>
+ <tr>
+ <td width="50%"><img src="docs/screenshots/01-dashboard.png" alt="Dashboard"><br><sub>Dashboard</sub></td>
+ <td width="50%"><img src="docs/screenshots/02-mahasiswa.png" alt="Daftar Mahasiswa"><br><sub>Daftar Mahasiswa</sub></td>
+ </tr>
+ <tr>
+ <td width="50%"><img src="docs/screenshots/03-form-input.png" alt="Form Input"><br><sub>Form Input</sub></td>
+ <td width="50%"><img src="docs/screenshots/04-dosen.png" alt="Daftar Dosen"><br><sub>Daftar Dosen</sub></td>
+ </tr>
 </table>
 
 ## ✨ Fitur
@@ -50,12 +50,12 @@ Halaman disusun sebagai file mandiri (`mhsw.php`, `mhsw_input.php`, `mhsw_edit.p
 
 ```mermaid
 flowchart TD
-    A[Browser] --> B[index.php?hal=mhsw]
-    B --> C[autoload + inc/Koneksi.php]
-    C --> D[App\Mahasiswa]
-    D --> E[(pbwl_samples_5)]
-    B --> F[mhsw.php / mhsw_input.php]
-    F --> A
+ A[Browser] --> B[index.php?hal=mhsw]
+ B --> C[autoload + inc/Koneksi.php]
+ C --> D[App\Mahasiswa]
+ D --> E[(pbwl_samples_5)]
+ B --> F[mhsw.php / mhsw_input.php]
+ F --> A
 ```
 
 ## 🚀 Instalasi
