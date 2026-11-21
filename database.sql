@@ -1,23 +1,27 @@
-CREATE TABLE tb_kategori (
-	kat_id TINYINT(3) NOT NULL AUTO_INCREMENT,
-	kat_nama VARCHAR(50) NOT NULL,
-	kat_keterangan TEXT DEFAULT NULL,
-	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	updated_at DATETIME DEFAULT NULL,
-	PRIMARY KEY(kat_id)
+CREATE TABLE tb_mhsw (
+      mhsw_id INT(11) NOT NULL AUTO_INCREMENT,
+      mhsw_nim VARCHAR(25) NOT NULL,
+      mhsw_nama VARCHAR(100) NOT NULL,
+      mhsw_alamat TEXT DEFAULT NULL,
+      PRIMARY KEY(mhsw_id),
+      UNIQUE KEY(mhsw_nim)
 );
-CREATE TABLE tb_produk (
-	produk_id INT(11) NOT NULL AUTO_INCREMENT,
-	produk_id_kat TINYINT(3) NOT NULL,
-	produk_kode VARCHAR(50) NOT NULL,
-	produk_nama VARCHAR(256) NOT NULL,
-	produk_hrg BIGINT(20) DEFAULT '0',
-	produk_keterangan TEXT DEFAULT NULL,
-	produk_stock INT(11) DEFAULT '0',
-	produk_photo VARCHAR(100) DEFAULT NULL,
-	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	updated_at DATETIME DEFAULT NULL,
-	PRIMARY KEY(produk_id),
-	UNIQUE KEY(produk_kode),
-	FOREIGN KEY(produk_id_kat) REFERENCES tb_kategori(kat_id) ON UPDATE CASCADE ON DELETE RESTRICT
+
+CREATE TABLE tb_dosen (
+      dosen_id INT(11) NOT NULL AUTO_INCREMENT,
+      dosen_nip VARCHAR(25) NOT NULL,
+      dosen_nama VARCHAR(100) NOT NULL,
+      dosen_golongan VARCHAR(100) DEFAULT NULL,
+      PRIMARY KEY(dosen_id),
+      UNIQUE KEY(dosen_nip)
+);
+
+CREATE TABLE tb_matakuliah (
+      matkul_id INT(11) NOT NULL AUTO_INCREMENT,
+      matkul_kode VARCHAR(25) NOT NULL,
+      matkul_nama VARCHAR(100) NOT NULL,
+      matkul_sks TINYINT(3) NOT NULL,
+      matkul_semester TINYINT(3) NOT NULL,
+      PRIMARY KEY(matkul_id),
+      UNIQUE KEY(matkul_kode)
 );
