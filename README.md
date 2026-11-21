@@ -10,8 +10,6 @@ Versi lanjutan Sistem Akademik OOP dengan autoload Composer, halaman terpisah pe
 
 </div>
 
----
-
 ## 📖 Deskripsi
 
 Halaman disusun sebagai file mandiri (`mhsw.php`, `mhsw_input.php`, `mhsw_edit.php`, `mhsw_proses.php`) lalu disertakan lewat `index.php?hal=...`. Model `App\Mahasiswa` berbicara ke database melalui `inc/Koneksi.php`.
